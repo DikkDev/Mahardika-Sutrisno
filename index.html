@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahardika's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-light shadow-sm sticky-top">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="icons/profil.png" class="profile-img me-2 icon-shadow" alt="Profile" />
+        <strong class="brand-accent">Mahardika Sutrisno</strong>
+      </a>
+
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav text-center">
+            <a class="nav-link nav-hover" href="#home">Home</a>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <a class="nav-link nav-hover" href="#games">Projects</a>
+            <a class="nav-link nav-hover" href="#contact">Contact Me</a>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="d-none d-lg-block position-absolute start-50 translate-middle-x">
+        <ul class="navbar-nav flex-row gap-4">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#games">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="container mt-5 fade-in">
+    <h4 class="section-title">Home</h4>
+    <div class="section-line mb-3"></div>
+    <p>Welcome to my portfolio! I have a talent in electrical engineering with a strong interest in electrical installation, power systems, and renewable energy technologies.</p>
+    <p>I have experience in designing household and industrial electrical systems, reading technical electrical diagrams, and troubleshooting control circuits and electric motors.</p>
+    <p>I believe that reliable and efficient electrical systems are the foundation of modern technological advancement. That's why I continue learning and developing skills in electrical protection, automation, and energy efficiency.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mt-5 fade-in">
+    <h4 class="section-title">About</h4>
+    <div class="section-line mb-4"></div>
+    <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+      <!-- Profile Image -->
+      <div>
+        <img src="icons/profil1.png" alt="Profile" class="rounded-circle shadow icon-shadow" style="width: 140px; height: 140px; object-fit: cover;">
+      </div>
+
+      <!-- Text -->
+      <div style="flex: 1;">
+        <p class="mb-2">I'm Mahardika Sutrisno, 17 years old, with a strong interest in power distribution systems, control circuits, and electrical installation engineering.</p>
+        <p class="mb-2">During my studies and field practice, I've designed and analyzed electrical circuits, read one-line diagrams, and operated various measuring tools such as multimeters and clamp meters.</p>
+        <p class="mb-0">With a solid understanding of electrical systems from residential to industrial applications, I continue to grow my skills in PLC programming, protection systems, and energy efficiency to support safe and sustainable technological advancement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="games" class="container mt-5 fade-in">
+    <h4 class="section-title">Projects</h4>
+    <div class="section-line mb-3"></div>
+
+    <!-- Project 1 -->
+    <div class="row align-items-start mb-4 game-item">
+      <div class="col-4 col-md-3">
+        <img src="icons/product1.png" class="img-fluid rounded game-thumb-sketch icon-shadow" alt="Project 1" />
+      </div>
+      <div class="col-8 col-md-9">
+        <h5>Home Installation Panel</h5>
+        <p>Designing an electrical installation panel for homes, complete with MCB, ELCB, and grounding systems that meet SNI standards.</p>
+        <a href="#home" target="_blank" class="btn btn-main">View Details</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="row align-items-start mb-4 game-item">
+      <div class="col-4 col-md-3">
+        <img src="icons/product2.png" class="img-fluid rounded game-thumb-sketch icon-shadow" alt="Project 2" />
+      </div>
+      <div class="col-8 col-md-9">
+        <h5>Motor Control and Power Circuit</h5>
+        <p>This project involves designing control circuits for electric motor systems, including power supply and motor protection components.</p>
+        <a href="#home" target="_blank" class="btn btn-main">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mt-5 mb-5 text-center fade-in">
+    <h4 class="section-title text-start">Contact Me</h4>
+    <div class="section-line mb-3"></div>
+    <p>Feel free to reach out to me through the platforms below:</p>
+    <div class="d-flex justify-content-center gap-4 mt-3 flex-wrap">
+      <a href="https://wa.me/6281256319622?text=I%20Would%20Like%20To%20Ask!" target="_blank" class="btn btn-outline-dark d-flex align-items-center gap-2">
+        <img src="https://img.icons8.com/ios-filled/24/000000/phone.png" alt="Phone" class="icon-shadow" />
+        WhatsApp
+      </a>
+      <a href="mailto:dikadiscord114@gmail.com" class="btn btn-outline-dark d-flex align-items-center gap-2">
+        <img src="https://img.icons8.com/ios-filled/24/000000/email.png" alt="Email" class="icon-shadow" />
+        Email
+      </a>
+      <a href="https://youtube.com/@dikkdev" class="btn btn-outline-dark d-flex align-items-center gap-2">
+        <img src="https://img.icons8.com/ios-filled/24/000000/play.png" alt="Youtube" class="icon-shadow" />
+        YouTube
+      </a>
+      <a href="https://instagram.com/dikkdev_" target="_blank" class="btn btn-outline-dark d-flex align-items-center gap-2">
+        <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram" class="icon-shadow" />
+        Instagram
+      </a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
